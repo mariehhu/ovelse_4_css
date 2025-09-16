@@ -1,0 +1,180 @@
+:root{
+    --main-pink: #ff4680;
+    --light-pink: #fc9fc7;
+    --main-gray: #fdeaf3;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+ }
+
+ /* ========GLOBAL HEADER========*/
+ #global-header{
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 1rem;
+    min-height: 300px;
+
+    nav{
+        background-color: #ffffff;
+        border:1px solid #afafaf;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0.5rem;
+            margin: 0;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+
+           
+            }
+        }
+}
+
+
+
+nav a {
+    display: block;
+    padding: 0.45rem 0.8rem;
+    color: #000;
+    border-radius: 4px;
+}
+
+#mainlogo{
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    color: #ff4680;
+    text-decoration: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+/*  ============HOVEDINNHOLD============  */
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+
+}
+
+article{
+    margin: 1rem 3rem;
+    color: #ff4680;
+    border:1px solid #afafaf; 
+    width: 100%;
+    min-width: 250px;
+    padding: 1rem;
+
+    img{
+        width: 100%;
+    }
+}
+
+p{
+    color: #fc9fc7;
+}
+
+h3{
+    color: #ff4680;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #ff4680;
+    color: #fff;
+    padding: 1rem; 
+    border: none;
+}
+
+aside{
+    padding: 1rem;
+}
+
+footer{
+    background: #fc9fc7;
+    color: #000;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+/* Footer skjema */
+footer label { display: block; margin-bottom: 0.5rem; color: #fff; }
+footer input, footer textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ff4680;
+    border-radius: 4px;
+}
+
+/* Tabell (ovelse.html) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.6rem;
+    text-align: left;
+}
+th { background: #f2f2f2; }
+
+/* status-klasser */
+.ferdig { background: #e6ffea; }
+.planlagt { background: #fff7e6; }
+.obligatorisk { font-weight: 700; }
+
+/* Knapper */
+.btn {
+    display: inline-block;
+    background: #ff4680;
+    color: #fff;
+    padding: 0.5rem 0.9rem;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.google-btn {
+    display: inline-block;
+    background: #ff4680;
+    color: white;
+    padding: 0.5rem 0.9rem;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Responsivt: kolonner under hverandre på små skjermer */
+@media (max-width: 780px) { 
+    .content { grid-template-columns: 1fr; }
+    nav ul { flex-direction: column; gap: 0; }
+    #global-header { height: auto; padding-bottom: 0.5rem; }
+    }
+
